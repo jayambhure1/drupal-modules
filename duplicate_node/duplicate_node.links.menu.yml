@@ -1,0 +1,5 @@
+duplicate_node.config_menu:
+  title: "Duplicate Node Settings"
+  route_name: duplicate_node.settingsform
+  parent: system.admin_config_content
+  description: 'Configure settings related to duplicating nodes with the Duplicate Node module.'

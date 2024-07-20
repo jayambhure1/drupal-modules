@@ -1,0 +1,5 @@
+prefix_for_node_title: "duplicate of"
+exclude:
+  node: { }
+  paragraph: { }
+duplicate_status: false

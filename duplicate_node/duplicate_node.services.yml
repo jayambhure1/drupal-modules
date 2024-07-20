@@ -1,0 +1,12 @@
+services:
+  duplicate_node.entity.form_builder:
+    class: Drupal\duplicate_node\Entity\DuplicateNodeEntityFormBuilder
+    arguments: ['@form_builder', '@entity_type.bundle.info', '@config.factory', '@module_handler', '@entity_type.manager', '@current_user', '@tempstore.private', '@string_translation']
+  duplicate_node.address_event_subscriber:
+    class: Drupal\duplicate_node\EventSubscriber\AddressEventSubscriber
+    arguments: ['@tempstore.private', '@duplicate_node.node_finder']
+    tags:
+      - { name: event_subscriber }
+  duplicate_node.node_finder:
+    class: Drupal\duplicate_node\DuplicateNodeFinder
+    arguments: ['@request_stack', '@path_alias.manager', '@entity_type.manager']

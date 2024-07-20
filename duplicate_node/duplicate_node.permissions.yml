@@ -1,0 +1,5 @@
+Administer Duplicate Node Settings:
+  title: 'Duplicate Node Settings'
+  description: 'Administer Duplicate Node Settings'
+permission_callbacks:
+  - \Drupal\duplicate_node\DuplicateNodePermissions::duplicateTypePermissions

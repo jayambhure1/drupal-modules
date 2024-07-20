@@ -1,0 +1,7 @@
+name: 'Duplicate Node'
+type: module
+description: 'Duplicate node.'
+core_version_requirement: ^8.8 || ^9 || ^10
+dependencies:
+  - drupal:node
+  - drupal:layout_builder

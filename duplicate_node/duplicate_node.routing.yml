@@ -1,0 +1,26 @@
+duplicate_node.node.duplicate_node:
+  path: '/duplicate/{node}/duplicate_node'
+  defaults:
+    _controller: '\Drupal\duplicate_node\Controller\DuplicateNodeController::duplicateNode'
+    _title_callback: '\Drupal\duplicate_node\Controller\DuplicateNodeController::duplicatePageTitle'
+  requirements:
+    _custom_access: '\Drupal\duplicate_node\Controller\DuplicateNodeAccess::duplicateNode'
+  options:
+    _admin_route: TRUE
+    parameters:
+      node:
+        type: entity:node
+duplicate_node.settingsform:
+  path: '/admin/config/duplicate-node-settings'
+  defaults:
+    _form: '\Drupal\duplicate_node\Form\DuplicateNodeSettingsForm'
+    _title: 'Duplicate Node Setting'
+  requirements:
+    _permission: 'Administer Duplicate Node Settings'
+duplicate_node.paragraph_settings_form:
+  path: '/admin/config/duplicate-node-settings-paragraph'
+  defaults:
+    _form: '\Drupal\duplicate_node\Form\DuplicateNodeParagraphSettingsForm'
+    _title: 'Quick Node Paragraph duplicate Setting'
+  requirements:
+    _permission: 'Administer Duplicate Node Settings'
