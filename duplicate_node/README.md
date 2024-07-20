@@ -24,8 +24,3 @@ CONFIGURATION
        previous node are populated.
     4. Make appropriate edits and Save New Duplicate.
 
-
-MAINTAINERS
------------
-
- * Dhananjay Ambhure (jayambhure1) - https://www.drupal.org/u/jayambhure1
