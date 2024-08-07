@@ -1,6 +1,6 @@
-name: 'Duplicate Node'
+name: 'Duplicate Node Layout &  Block'
 type: module
-description: 'Duplicate node.'
+description: 'Duplicate node with layout and associated blocks'
 core_version_requirement: ^8.8 || ^9 || ^10
 dependencies:
   - drupal:node

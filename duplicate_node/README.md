@@ -1,18 +1,11 @@
-CONTENTS OF THIS FILE
----------------------
-
- * Introduction
- * Configuration
- * Maintainers
-
-
 INTRODUCTION
 ------------
 
-The Duplicate Node module adds a "Duplicate" tab to a node. When selected, a new
-node is created and fields from the previous node are populated into the new
-fields.
+Duplicate Node Layout & Block is used to duplicate node with all fields.
 
+If the layout builder is enabled for this node, then the layout is also duplicated.
+
+If inside the node layout any custom block is placed, this also duplicates, and this block is linked to the duplicate node, so users can easily edit the duplicate block. 
 
 CONFIGURATION
 -------------
